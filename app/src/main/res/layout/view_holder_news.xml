@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_news_speaker"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/ken_robinson"
+        android:scaleType="centerCrop"
+        android:layout_margin="@dimen/margin_medium"/>
+
+    <!-- constraint -->
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do school kills creativity?"
+        android:textSize="@dimen/text_regular_2x"
+        android:textColor="@color/primary_text"
+        android:textStyle="bold"
+        android:layout_alignBottom="@id/iv_news_speaker"
+        android:shadowColor="@color/shadow"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/margin_medium_2"/>
+
+    <!-- constraint -->
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ken Robinson"
+        android:layout_above="@+id/tv_description"
+        android:layout_alignLeft="@+id/tv_description"
+        android:layout_marginBottom="@dimen/margin_small_n"
+        android:textColor="@color/secondary_text"/>
+
+    <TextView
+        android:id="@+id/tv_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_news_speaker"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium_2"
+        android:text="19:24"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/secondary_text"
+       />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/three_dots"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/tv_duration"
+        style="?android:attr/actionOverflowButtonStyle"/>
+</RelativeLayout>
