@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.padcmyannmar.ted">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,7 +18,7 @@
 
         </activity>
 
-        <activity android:name=".activities.NewListActivity"
+        <activity android:name=".activities.TedTalksListActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +27,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activities.NewsDetailsActivity"
+        <activity android:name=".activities.TedTalksDetailsActivity"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>

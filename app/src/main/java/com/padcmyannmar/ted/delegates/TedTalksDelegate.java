@@ -1,8 +1,8 @@
 package com.padcmyannmar.ted.delegates;
 
-public interface NewsDelegate {
+public interface TedTalksDelegate {
 
     void onTapNews();
-    void onTabFavorite();
+    void onTapFavorite();
 
 }

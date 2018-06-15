@@ -146,7 +146,8 @@
                 android:layout_marginTop="@dimen/margin_medium_2"
                 android:lineSpacingMultiplier="1.3"
                 android:textColor="@color/primary_black_text"
-                android:textSize="@dimen/text_regular_2x" />
+                android:textSize="@dimen/text_regular_2x"
+                />
 
             <View
                 android:id="@+id/vw_line1"

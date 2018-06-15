@@ -10,17 +10,17 @@
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:background="@color/white"
             android:layout_height="?attr/actionBarSize"
             app:logo="@drawable/ted_talk_icon"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
             app:title="Talks"
             app:titleMarginStart="@dimen/margin_large"
             app:titleTextAppearance="@style/Toolbar.TitleText"
-            app:titleTextColor="@color/primary_dark">
-
-        </android.support.v7.widget.Toolbar>
+            app:titleTextColor="@color/primary_dark"
+            android:background="@android:color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:collapseIcon="@color/primary_black_text"/>
 
     </android.support.design.widget.AppBarLayout>
 
